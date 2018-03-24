@@ -67,5 +67,6 @@ After that you can access basic app (linked with Yii2 playground) locally by URL
 TODO
 ----
 
-- [ ] Silent composer while machine building (see https://github.com/yiisoft/yii2/pull/15972)
-- [ ] SQLite for tests
+- [x] Update PHP to version **7.1.x**
+- [x] **Silent composer** while machine building (see https://github.com/yiisoft/yii2/pull/15972)
+- [ ] **SQLite** for tests
