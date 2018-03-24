@@ -25,6 +25,10 @@ composer --no-progress install
 info "Install basic app"
 php build/build dev/app basic --useHttp
 
+info "Configure yii2 playground"
+cp /y2cv/vagrant/yii2-local-configs/tests/data/config.local.php /yii2/tests/data/config.local.php
+echo "Done!"
+
 info "Automatic project dir opening after SSH login"
 echo 'cd /yii2' | tee -a /home/vagrant/.bashrc
 
