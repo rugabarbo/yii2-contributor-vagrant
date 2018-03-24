@@ -30,7 +30,7 @@ Installation
    ```
    
 That's all. You just need to wait for completion! 
-After that you can access basic app (linked with Yii2 playground) locally by URLs: http://l.y2cv-basic.test
+After that you can access basic app (linked with Yii2 playground) locally by URLs: http://l.y2cv-basic-app.test
    
 #### Manual for Windows users
 
@@ -55,4 +55,4 @@ After that you can access basic app (linked with Yii2 playground) locally by URL
    (You can read [here](http://www.wikihow.com/Change-Directories-in-Command-Prompt) how to change directories in command prompt) 
 
 That's all. You just need to wait for completion! 
-After that you can access basic app (linked with Yii2 playground) locally by URLs: http://l.y2cv-basic.test
+After that you can access basic app (linked with Yii2 playground) locally by URLs: http://l.y2cv-basic-app.test
