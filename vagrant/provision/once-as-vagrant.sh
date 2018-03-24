@@ -29,6 +29,10 @@ info "Configure yii2 playground"
 cp /y2cv/vagrant/yii2-local-configs/tests/data/config.local.php /yii2/tests/data/config.local.php
 echo "Done!"
 
+info "Configure linked basic app"
+sed -i "s/'cookieValidationKey' => ''/'cookieValidationKey' => 'f8dcecf915c4ad7086ec198028969593'/g" /yii2/apps/basic/config/web.php
+echo "Done!"
+
 info "Automatic project dir opening after SSH login"
 echo 'cd /yii2' | tee -a /home/vagrant/.bashrc
 
