@@ -36,7 +36,7 @@ mysql-server-5.7 memcached sqlite postgresql \
 php7.1-mysql php-memcached php7.1-sqlite php7.1-pgsql \
 php7.1-curl php7.1-intl  php7.1-gd php7.1-mbstring php7.1-xml \
 php-xdebug \
-unzip mc
+unzip mc htop
 
 info "Configure MySQL"
 sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/mysql.conf.d/mysqld.cnf
