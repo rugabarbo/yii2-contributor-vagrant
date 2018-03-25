@@ -63,11 +63,3 @@ steps according to the [Yii2 contributor guide](https://github.com/yiisoft/yii2/
 
 That's all. You just need to wait for completion! 
 After that you can access basic app (linked with Yii2 playground) locally by URLs: http://l.y2cv-basic-app.test
-
-TODO
-----
-
-- [x] Update PHP to version **7.1.x**
-- [x] **Silent composer** while machine building (see https://github.com/yiisoft/yii2/pull/15972)
-- [x] **SQLite** for tests
-- [ ] **PostgreSQL** for tests

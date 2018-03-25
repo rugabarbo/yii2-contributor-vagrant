@@ -32,8 +32,8 @@ info "Install additional software"
 apt-get install -y \
 nginx \
 php7.1-fpm php7.1-cli \
-mysql-server-5.7 memcached sqlite \
-php7.1-mysql php-memcached php7.1-sqlite \
+mysql-server-5.7 memcached sqlite postgresql \
+php7.1-mysql php-memcached php7.1-sqlite php7.1-pgsql \
 php7.1-curl php7.1-intl  php7.1-gd php7.1-mbstring php7.1-xml \
 php-xdebug \
 unzip mc
@@ -80,6 +80,11 @@ mysql -uroot -proot <<< "CREATE DATABASE yii2_test"
 mysql -uroot -proot <<< "CREATE USER 'yii2_test'@'%' IDENTIFIED BY 'yii2_test'"
 mysql -uroot -proot <<< "GRANT ALL PRIVILEGES ON yii2_test.* TO 'yii2_test'@'%'"
 mysql -uroot -proot <<< "FLUSH PRIVILEGES"
+echo "Done!"
+
+info "Initializing databases and users for PostgreSQL"
+sudo -u postgres psql -c "CREATE USER yii2_test WITH PASSWORD 'yii2_test'"
+sudo -u postgres psql -c "CREATE DATABASE yii2_test WITH OWNER 'yii2_test'"
 echo "Done!"
 
 info "Install composer"
