@@ -11,3 +11,4 @@ service php7.1-fpm restart
 service nginx restart
 service mysql restart
 service memcached restart
+service postgresql restart
