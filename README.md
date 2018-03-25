@@ -1,5 +1,16 @@
 It's ready to use Yii2 playground that can be handy for Yii2 contributors.
 
+Stack
+-----
+
+| Software | Version |
+| --- | --- |
+| PHP | 7.1 |
+| MySQL | 5.7 |
+| PostgreSQL | 9.5 |
+| SQLite | 2.8 |
+
+
 Installation
 ------------
 
