@@ -69,4 +69,5 @@ TODO
 
 - [x] Update PHP to version **7.1.x**
 - [x] **Silent composer** while machine building (see https://github.com/yiisoft/yii2/pull/15972)
-- [ ] **SQLite** for tests
+- [x] **SQLite** for tests
+- [ ] **PostgreSQL** for tests

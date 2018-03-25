@@ -32,8 +32,8 @@ info "Install additional software"
 apt-get install -y \
 nginx \
 php7.1-fpm php7.1-cli \
-mysql-server-5.7 memcached \
-php7.1-mysql php-memcached \
+mysql-server-5.7 memcached sqlite \
+php7.1-mysql php-memcached php7.1-sqlite \
 php7.1-curl php7.1-intl  php7.1-gd php7.1-mbstring php7.1-xml \
 php-xdebug \
 unzip mc
