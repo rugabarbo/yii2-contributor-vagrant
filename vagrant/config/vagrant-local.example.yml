@@ -19,7 +19,7 @@ ip: 192.168.206.8
 cpus: 2
 
 # Virtual machine RAM
-memory: 1024
+memory: 1536
 
 # Path to local yii2 git repository (absolute or relative)
 yii2_repo: ../yii2
