@@ -10,6 +10,12 @@ Stack
 | PostgreSQL | 9.5 |
 | SQLite | 2.8 |
 
+Also the box contains: 
+* [yii2-basic-app](https://github.com/yiisoft/yii2-app-basic)
+* Nginx, php-fpm / cli
+* Composer
+* xDebug
+* htop, mc (Midnight Commander)
 
 Installation
 ------------
