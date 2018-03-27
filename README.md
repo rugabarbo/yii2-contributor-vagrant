@@ -8,7 +8,7 @@ Stack
 | PHP | 7.1 |
 | MySQL | 5.7 |
 | PostgreSQL | 9.5 |
-| SQLite | 2.8 |
+| SQLite | 2.8 and 3.11 |
 
 Also the box contains: 
 * [yii2-basic-app](https://github.com/yiisoft/yii2-app-basic)
