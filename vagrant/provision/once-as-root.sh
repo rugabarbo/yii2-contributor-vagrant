@@ -21,7 +21,7 @@ debconf-set-selections <<< "mysql-community-server mysql-community-server/root-p
 debconf-set-selections <<< "mysql-community-server mysql-community-server/re-root-pass password root"
 echo "Done!"
 
-info "Add PHP7.1 PPA"
+info "Add PHP7 PPA"
 add-apt-repository -y ppa:ondrej/php
 
 info "Update OS software"
@@ -31,10 +31,10 @@ apt-get upgrade -y
 info "Install additional software"
 apt-get install -y \
 nginx \
-php7.1-fpm php7.1-cli \
+php7.3-fpm php7.3-cli \
 mysql-server-5.7 memcached sqlite postgresql \
-php7.1-mysql php-memcache php-memcached php7.1-sqlite php7.1-pgsql \
-php7.1-curl php7.1-intl php7.1-mcrypt php7.1-gd php7.1-mbstring php7.1-xml \
+php7.3-mysql php-memcache php-memcached php7.3-sqlite php7.3-pgsql \
+php7.3-curl php7.3-intl php7.3-gd php7.3-mbstring php7.3-xml \
 php-xdebug \
 unzip mc htop
 
@@ -46,17 +46,17 @@ mysql -uroot -proot <<< "FLUSH PRIVILEGES"
 echo "Done!"
 
 info "Configure PHP"
-sed -i 's/display_errors = Off/display_errors = On/g' /etc/php/7.1/fpm/php.ini
+sed -i 's/display_errors = Off/display_errors = On/g' /etc/php/7.3/fpm/php.ini
 echo "Done!"
 
 info "Configure PHP-FPM"
-sed -i 's/user = www-data/user = vagrant/g' /etc/php/7.1/fpm/pool.d/www.conf
-sed -i 's/group = www-data/group = vagrant/g' /etc/php/7.1/fpm/pool.d/www.conf
-sed -i 's/owner = www-data/owner = vagrant/g' /etc/php/7.1/fpm/pool.d/www.conf
+sed -i 's/user = www-data/user = vagrant/g' /etc/php/7.3/fpm/pool.d/www.conf
+sed -i 's/group = www-data/group = vagrant/g' /etc/php/7.3/fpm/pool.d/www.conf
+sed -i 's/owner = www-data/owner = vagrant/g' /etc/php/7.3/fpm/pool.d/www.conf
 echo "Done!"
 
 info "Configure XDebug"
-cat << EOF > /etc/php/7.1/mods-available/xdebug.ini
+cat << EOF > /etc/php/7.3/mods-available/xdebug.ini
 zend_extension=xdebug.so
 xdebug.remote_enable=1
 xdebug.remote_connect_back=1
